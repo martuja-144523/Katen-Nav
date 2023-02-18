@@ -1,0 +1,50 @@
+/* common css starts */
+:root{
+    --defult-tx-color: #fff;
+    --promiry-text : 'Poppins', sans-serif;
+    --secondary-text :'Roboto', sans-serif;
+    --normal-tx-size : 15px;
+    --normal-ln-height : 21px;
+    --normal-color : #203656;
+    --blog-tx-size: 20px;
+    --blog-ln-height: 28px;
+    --tx-hover-color: #FE4F70;
+
+ }
+ li{
+    list-style-type: none;
+ }
+/* common css ends */
+/* Navbar css starts */
+.my-nab{
+    margin: 40px 0;
+}
+.my-nab .container-fluid{
+    padding: 0 40px;
+}
+ .my-nab .nav-link{
+    color: #79889E;
+    border-radius: 25px;
+    line-height: var(--normal-ln-height);
+    margin: 10px 6px;
+ }
+ .my-nab .nav-link.bg{
+    color: var(--defult-tx-color);
+    background: linear-gradient(to right,#fe4f70 0%,#ffa387 100%);
+ }
+ .my-nab .shop_drop{
+    position: relative;
+ }
+ .my-nab .Sh_dropdown{
+    position: absolute;
+    transform: scale(0);
+    left: -5px;
+    top: 40px;
+    transition: .5s;
+ }
+ .my-nab .li_parents:hover .Sh_dropdown{
+    display: block;
+    transform: scale(1);
+    transform-origin: top center;
+ }
+/* Navbar css ends */
